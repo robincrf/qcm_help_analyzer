@@ -1,0 +1,13 @@
+# Core dependencies - macOS optimized
+mss>=9.0.1
+Pillow>=11.0.0
+pytesseract>=0.3.10
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# macOS hotkey alternative (plus léger que keyboard)
+pynput>=1.7.6
+
+# Testing
+pytest>=7.4.3
+pytest-mock>=3.12.0
