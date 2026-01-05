@@ -23,6 +23,7 @@ Application Python pour capturer automatiquement des QCM à l'écran, extraire l
 
 ```bash
 git clone https://github.com/robincrf/qcm_easy.git
+cd qcm_easy
 cd tests
 ```
 
@@ -37,6 +38,7 @@ source venv/bin/activate  # Sur macOS/Linux
 ### 3. Installer les dépendances
 
 ```bash
+cd ../
 pip install -r requirements.txt
 ```
 
