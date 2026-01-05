@@ -22,7 +22,7 @@ Application Python pour capturer automatiquement des QCM à l'écran, extraire l
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/VOTRE_USERNAME/qcm-screen-analyzer.git
+git clone https://github.com/robincrf/qcm_easy.git
 cd tests
 ```
 
