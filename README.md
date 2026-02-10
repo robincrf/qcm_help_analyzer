@@ -1,4 +1,4 @@
-# 🎓 QCM Screen Analyzer
+# QCM Screen Analyzer
 
 Application Python pour capturer automatiquement des QCM à l'écran, extraire le texte par OCR et obtenir les réponses via IA.
 
@@ -10,14 +10,14 @@ Application Python pour capturer automatiquement des QCM à l'écran, extraire l
 - **Popup de résultats** : Affichage des réponses dans une fenêtre contextuelle
 - **Aucune sauvegarde** : Pas de données écrites sur le disque
 
-## 📋 Prérequis
+## Prérequis
 
 - **Python 3.11+** (testé sur Python 3.14)
 - **macOS** (ou Windows/Linux avec adaptations)
 - Compte gratuit [OCRSpace](https://ocr.space/ocrapi) pour l'OCR
 - Compte gratuit [Groq](https://console.groq.com) pour l'IA
 
-## 🚀 Installation
+## Installation
 
 ### 1. Cloner le projet
 
@@ -42,7 +42,7 @@ cd ../
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Créer le fichier `.env`
 
@@ -98,12 +98,12 @@ DEBUG_SAVE_SCREENSHOTS=false
 ### 4. Vérifier la configuration
 
 Assurez-vous que :
-- ✅ Le fichier `.env` existe dans le dossier racine
-- ✅ Les deux clés API sont correctement copiées (sans espaces)
-- ✅ `USE_LLM=true` pour activer l'analyse IA
-- ✅ Le fichier `.env` n'est **PAS** committé sur Git (déjà dans `.gitignore`)
+- Le fichier `.env` existe dans le dossier racine
+- Les deux clés API sont correctement copiées (sans espaces)
+- `USE_LLM=true` pour activer l'analyse IA
+- Le fichier `.env` n'est **PAS** committé sur Git (déjà dans `.gitignore`)
 
-## 🎮 Utilisation
+##  Utilisation
 
 ### Lancer l'application
 
@@ -114,12 +114,12 @@ python main.py
 Vous verrez :
 
 ```
-🚀 QCM Screen Analyzer démarré
+ QCM Screen Analyzer démarré
    OCR: OCRSpace API (fre)
    LLM: Groq API (llama-3.3-70b-versatile)
    Mode debug: ✗ Désactivé
 
-📌 Raccourcis:
+ Raccourcis:
    = - Capturer l'écran et analyser
    ESC - Quitter l'application
 
@@ -134,7 +134,7 @@ En attente...
 4. Une **popup** s'affiche avec les résultats
 5. **Appuyez sur ESC** pour quitter
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 qcm-screen-analyzer/
@@ -151,43 +151,43 @@ qcm-screen-analyzer/
 └── README.md            # Ce fichier
 ```
 
-## 🔒 Sécurité
+##  Sécurité
 
-- ✅ Les clés API sont dans `.env` (ignoré par Git)
-- ✅ Aucune sauvegarde de captures d'écran par défaut
-- ✅ Pas de logs sensibles
-- ✅ Timeouts réseau configurés
-- ⚠️ **Ne partagez JAMAIS votre fichier `.env`**
+-  Les clés API sont dans `.env` (ignoré par Git)
+-  Aucune sauvegarde de captures d'écran par défaut
+-  Pas de logs sensibles
+-  Timeouts réseau configurés
+-  **Ne partagez JAMAIS votre fichier `.env`**
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### "Clé API OCRSpace manquante"
-➡️ Vérifiez que `OCRSPACE_API_KEY` est dans `.env`
+ Vérifiez que `OCRSPACE_API_KEY` est dans `.env`
 
 ### "Groq API key manquante"
-➡️ Vérifiez que `GROQ_API_KEY` est dans `.env` et `USE_LLM=true`
+ Vérifiez que `GROQ_API_KEY` est dans `.env` et `USE_LLM=true`
 
 ### "Erreur OCRSpace: File size exceeds"
-➡️ L'image est automatiquement compressée, vérifiez votre connexion
+ L'image est automatiquement compressée, vérifiez votre connexion
 
 ### Rate limit dépassé
-➡️ Groq gratuit : max 30 req/min. Attendez quelques secondes.
+ Groq gratuit : max 30 req/min. Attendez quelques secondes.
 
 ### Permissions macOS
-➡️ Autorisez Terminal dans **Préférences Système > Confidentialité > Accessibilité**
+ Autorisez Terminal dans **Préférences Système > Confidentialité > Accessibilité**
 
-## 📊 Limites gratuites
+##  Limites gratuites
 
 | Service | Limite gratuite |
 |---------|----------------|
 | **OCRSpace** | 25,000 requêtes/mois |
 | **Groq** | 30 req/min, 14,400/jour |
 
-## 📝 License
+##  License
 
 MIT License - Libre d'utilisation
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont les bienvenues ! Ouvrez une issue ou un PR.
 
