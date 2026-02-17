@@ -125,10 +125,6 @@ qcm-screen-analyzer/
 
 ---
 
-## License
-
-MIT License
-
 ## Contribution
 
 Contributions are welcome via Issues and PRs.
